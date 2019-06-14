@@ -1,0 +1,12 @@
+﻿<Window x:Class="PapasPapbar.UI.GameStats"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PapasPapbar.UI"
+        mc:Ignorable="d"
+        Title="GameStats" Height="450" Width="800">
+    <Grid>
+        <Button Content="Tilbage" Margin="10,10,722,389" Width="60" Height="20" Click="GameStats_Tilbage_Click"/>
+    </Grid>
+</Window>

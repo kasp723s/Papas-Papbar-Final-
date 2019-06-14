@@ -1,0 +1,16 @@
+﻿<Window x:Class="PapasPapbar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PapasPapbar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Reservation" Click="Reservation_Click" Margin="228,109,221,265"/>
+        <Button Content="Medlemskab" Click="Membership_Click" Margin="228,159,221,215"/>
+        <Button Content="Spilbibliotek" Click="BoardgameLibrary_Click" Margin="228,209,221,165"/>
+        <Button Content="Spilstatistik" Click="GameStats_Click" Margin="228,259,393,115"/>
+        <Button Content="Bord" Click="Table_Click" Margin="404,259,217,115"/>
+    </Grid>
+</Window>

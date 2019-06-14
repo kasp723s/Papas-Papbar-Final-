@@ -1,0 +1,32 @@
+﻿<Window x:Class="PapasPapbar.UI.Reservation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PapasPapbar.UI"
+        mc:Ignorable="d"
+        Title="Reservation" Height="462.023" Width="800">
+    <Grid Margin="0,0,0,-7">
+        <Button Content="Tilbage" Margin="722,10,10,408" Width="60" Height="20" Click="Reservation_Tilbage_Click"/>
+        <Label Content="Dato" HorizontalAlignment="Left" Margin="622,48,0,0" VerticalAlignment="Top"/>
+        <DataGrid Name="DataGrid3" HorizontalAlignment="Left" Height="375" Margin="10,10,0,0" VerticalAlignment="Top" Width="607" SelectionChanged="DataGrid3_SelectionChanged" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True" ColumnWidth="*"/>
+        <DatePicker HorizontalAlignment="Left" Margin="663,49,0,0" VerticalAlignment="Top" Name="txtReservationDate"/>
+        <Label Content="Tid" HorizontalAlignment="Left" Margin="622,89,0,0" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="669,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="68" Name="txtReservationTime"/>
+        <Label Content="Antal" HorizontalAlignment="Left" Margin="622,120,0,0" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="669,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="68" x:Name="txtParticipant"/>
+        <Label Content="Borde" HorizontalAlignment="Left" Margin="620,183,0,0" VerticalAlignment="Top" />
+        <ComboBox HorizontalAlignment="Left" Margin="663,187,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.1,0.136" Name="txtReservationTable"/>
+        <Label Content="Kommentar" HorizontalAlignment="Left" Margin="622,227,0,0" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left" Height="58" Margin="640,258,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="125" x:Name="txtReservationComment"/>
+        <Button Content="Tilføj" HorizontalAlignment="Left" Margin="394,392,0,0" VerticalAlignment="Top" Width="89" Name="AddReservation" Click="AddReservation_Click"/>
+        <Button Content="Reset" HorizontalAlignment="Left" Margin="488,393,0,0" VerticalAlignment="Top" Width="89" x:Name="ResetReservation" Click="ResetReservation_Click"/>
+        <Button Content="Slet" HorizontalAlignment="Left" Margin="582,393,0,0" VerticalAlignment="Top" Width="89" x:Name="DeleteReservation" Click="DeleteReservation_Click" IsEnabled="False"/>
+        <Button Content="Opdater" HorizontalAlignment="Left" Margin="676,392,0,0" VerticalAlignment="Top" Width="89" x:Name="UpdateReservation" Click="UpdateReservation_Click" IsEnabled="False"/>
+        <Label Content="Søg" HorizontalAlignment="Left" Margin="10,387,0,0" VerticalAlignment="Top" Width="41" Height="25"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="51,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="333" x:Name="txtSearch" TextChanged="TxtSearch_TextChanged"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="622,149,0,0" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="669,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="68" x:Name="txtCustomerName"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="640,321,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="31" x:Name="txtReservationId" Visibility="Hidden"/>
+    </Grid>
+</Window>
